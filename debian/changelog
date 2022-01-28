@@ -1,0 +1,5 @@
+disable-secondary-gpu (0.1.0) unstable; urgency=medium
+
+  * Initial commit
+
+ -- Your Name <your.email@example.org>  Fri, 26 Nov 2021 10:31:06 +0300

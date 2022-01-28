@@ -1,0 +1,13 @@
+Source: disable-secondary-gpu
+Section: utils
+Priority: optional
+Maintainer: Ali Riza KESKIN <parduscix@yandex.ru>
+Build-Depends: make
+Standards-Version: 4.3.0
+Homepage: https://example.org
+
+Package: disable-secondary-gpu
+Architecture: all
+Depends: ${misc:Depends}, libc6
+Description: Disable secondary gpu
+ Disable 3d controller devices during boot

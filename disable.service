@@ -1,0 +1,12 @@
+[Unit]
+Description=Disable secondary graphic card on boot
+Before=dbus.service
+
+[Service]
+Type=simple
+User=root
+ExecStart=/usr/bin/disable-secondary-gpu
+Restart=on-failure
+
+[Install]
+RequiredBy=multi-user.target
