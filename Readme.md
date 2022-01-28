@@ -4,5 +4,9 @@ Disable secondary 3d controller devices during boot.
 ## install for systemd
 `make install`
 
-## install for openrc
-`make install OPENRC=1`
+## install for nosystemd
+`make install SERVICE=openrc`
+Supported init systems:
+* openrc
+* sysvinit
+* 31init
