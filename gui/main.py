@@ -18,7 +18,7 @@ def button_event(widget):
         reboot.show()
 
 def reboot_event(widget):
-    os.system("pkexec reboot")
+    os.system("pkexec sh -c 'reboot'")
 
 button = builder.get_object("button")
 button.connect("clicked",button_event)
