@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=GPU Disabler
+Name[tr]=GPU Kapatıcı
+Comment=Disable/Enable External GPU
+Comment[tr]=Harici GPU Etkinleştir/Devre dışı bırak
+Exec=python3 /usr/share/disable-external-gpu/main.py
+Icon=disable-gpu
+Terminal=False
+Type=Application
+Categories=Application;System;

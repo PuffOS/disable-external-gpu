@@ -4,6 +4,7 @@ build:
 install: install-service
 	mkdir -p $(DESTDIR)/usr/bin
 	install disable.sh $(DESTDIR)/usr/bin/disable-secondary-gpu
+	make install -C gui
 
 install-service: install-$(SERVICE)
 

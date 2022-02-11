@@ -1,5 +1,5 @@
 #!/bin/bash
-if lsof /var/lib/dpkg/lock &>/dev/null; then
+if [[ ! -f /var/cache/disable-gpu ]] &>/dev/null; then
     exit 0
 fi
 echo 1 > /sys/bus/pci/rescan
