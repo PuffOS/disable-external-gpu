@@ -1,10 +1,15 @@
 SERVICE=systemd
 build:
 	: run make install
-install: install-service
+
+install: install-base install-service-all
+
+install-base:
 	mkdir -p $(DESTDIR)/usr/bin
 	install disable.sh $(DESTDIR)/usr/bin/disable-secondary-gpu
 	make install -C gui
+
+install-service-all: install-systemd install-openrc install-sysvinit install-31
 
 install-service: install-$(SERVICE)
 
